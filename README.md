@@ -39,6 +39,22 @@ const result = await cropImage(source, crop.area, {
 
 入力にはData URL、Blob URL、画像URLを指定できます。別ドメインの画像には配信元のCORS許可が必要です。ファイル入力では`URL.createObjectURL(file)`でURLを作り、処理とプレビューが終わったら`URL.revokeObjectURL(url)`で解放してください。
 
+## 動かせる使用例
+
+[通常のJavaScript](./examples/vanilla/src/main.ts)・[React](./examples/react/src/App.tsx)・[Vue](./examples/vue/src/App.vue)の使用例を用意しています。画像選択、ドラッグによる位置変更、比率・倍率・回転の変更、JPEG・PNG・WebP出力、HEIC変換設定を試せます。出力画像をクリックするとダウンロードできます。
+
+リポジトリのルートで実行してください。
+
+```sh
+pnpm install --frozen-lockfile
+pnpm build
+pnpm --filter @image-cropper-plus/example-vanilla dev
+```
+
+React版は`pnpm --filter @image-cropper-plus/example-react dev`、Vue版は`pnpm --filter @image-cropper-plus/example-vue dev`で起動します。全使用例の型チェックとビルドは`pnpm --filter './examples/*' build`で実行できます。
+
+各使用例は`private: true`の独立したpnpmワークスペースパッケージです。React・Vue・Viteなどは各使用例の`package.json`にだけ記載し、ライブラリ本体の依存関係や配布ファイルには含めていません。画像読み込みとCSSは`examples/shared`で共有し、UIと`calculateCrop`の接続は各使用例に記述しています。
+
 ## 公開API
 
 実行時に公開する関数は次の3つだけです。内部モジュールへの直接インポートはできません。

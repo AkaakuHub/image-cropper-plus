@@ -1,5 +1,6 @@
 {
-  "files": { "includes": ["**", "!dist", "!coverage"] },
+  "files": { "includes": ["**", "!**/dist", "!**/coverage"] },
+  "html": { "experimentalFullSupportEnabled": true, "formatter": { "enabled": true } },
   "formatter": { "indentStyle": "space", "lineWidth": 100 },
   "linter": {
     "enabled": true,
