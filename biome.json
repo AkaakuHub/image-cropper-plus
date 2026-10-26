@@ -1,0 +1,15 @@
+{
+  "files": { "includes": ["**", "!dist", "!coverage"] },
+  "formatter": { "indentStyle": "space", "lineWidth": 100 },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": { "noExplicitAny": "error" },
+      "complexity": {
+        "noExcessiveLinesPerFile": { "level": "error", "options": { "maxLines": 250 } }
+      }
+    }
+  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } }
+}
