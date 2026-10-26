@@ -4,7 +4,10 @@
   "description": "Framework-independent image cropping core extracted from hasujimaku",
   "type": "module",
   "sideEffects": false,
-  "files": ["dist", "NOTICE"],
+  "files": [
+    "dist",
+    "NOTICE"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -20,5 +23,13 @@
     "test": "vitest run",
     "prepack": "pnpm build"
   },
-  "packageManager": "pnpm@11.1.1"
+  "packageManager": "pnpm@11.1.1",
+  "dependencies": {
+    "heic2any": "0.0.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
 }

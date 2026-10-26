@@ -4,9 +4,9 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "suspicious": { "noExplicitAny": "error" },
-      "complexity": {
+      "style": {
         "noExcessiveLinesPerFile": { "level": "error", "options": { "maxLines": 250 } }
       }
     }
