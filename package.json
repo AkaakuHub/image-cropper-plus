@@ -1,6 +1,7 @@
 {
   "name": "image-cropper-plus",
   "version": "0.1.0",
+  "license": "MIT",
   "description": "Framework-independent image cropping core extracted from hasujimaku",
   "type": "module",
   "sideEffects": false,
