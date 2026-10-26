@@ -1,0 +1,152 @@
+[
+  {
+    "input": {
+      "imageSize": {
+        "width": 1920,
+        "height": 1080
+      },
+      "viewportSize": {
+        "width": 640,
+        "height": 480
+      },
+      "aspect": 1.7777777777777777,
+      "rotation": -45,
+      "zoom": 1.5,
+      "position": {
+        "x": 73,
+        "y": -27
+      }
+    },
+    "area": {
+      "width": 978,
+      "height": 550,
+      "x": 572,
+      "y": 786
+    }
+  },
+  {
+    "input": {
+      "imageSize": {
+        "width": 1920,
+        "height": 1080
+      },
+      "viewportSize": {
+        "width": 640,
+        "height": 480
+      },
+      "aspect": 1,
+      "rotation": 0,
+      "zoom": 1.5,
+      "position": {
+        "x": 73,
+        "y": -27
+      }
+    },
+    "area": {
+      "width": 720,
+      "height": 720,
+      "x": 454,
+      "y": 234
+    }
+  },
+  {
+    "input": {
+      "imageSize": {
+        "width": 1080,
+        "height": 1920
+      },
+      "viewportSize": {
+        "width": 640,
+        "height": 480
+      },
+      "aspect": 1.7777777777777777,
+      "rotation": 90,
+      "zoom": 1.5,
+      "position": {
+        "x": 73,
+        "y": -27
+      }
+    },
+    "area": {
+      "width": 1280,
+      "height": 720,
+      "x": 125,
+      "y": 252
+    }
+  },
+  {
+    "input": {
+      "imageSize": {
+        "width": 4032,
+        "height": 3024
+      },
+      "viewportSize": {
+        "width": 640,
+        "height": 480
+      },
+      "aspect": 1.7777777777777777,
+      "rotation": 0,
+      "zoom": 1.5,
+      "position": {
+        "x": 73,
+        "y": -27
+      }
+    },
+    "area": {
+      "width": 2688,
+      "height": 1512,
+      "x": 365,
+      "y": 869
+    }
+  },
+  {
+    "input": {
+      "imageSize": {
+        "width": 4032,
+        "height": 3024
+      },
+      "viewportSize": {
+        "width": 640,
+        "height": 480
+      },
+      "aspect": 2.35,
+      "rotation": 0,
+      "zoom": 1.5,
+      "position": {
+        "x": 73,
+        "y": -27
+      }
+    },
+    "area": {
+      "width": 2688,
+      "height": 1144,
+      "x": 365,
+      "y": 1053
+    }
+  },
+  {
+    "input": {
+      "imageSize": {
+        "width": 320,
+        "height": 240
+      },
+      "viewportSize": {
+        "width": 640,
+        "height": 480
+      },
+      "aspect": 2.35,
+      "rotation": 90,
+      "zoom": 1.5,
+      "position": {
+        "x": 73,
+        "y": -27
+      }
+    },
+    "area": {
+      "width": 160,
+      "height": 68,
+      "x": 0,
+      "y": 141
+    }
+  }
+]
