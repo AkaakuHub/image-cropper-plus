@@ -1,9 +1,14 @@
 import { getCropDrawOffset, getRadianAngle } from "../core/geometry.js";
-import type { Area } from "../core/types.js";
+import type { Area, CropImageOptions } from "../core/types.js";
 import { requireFinite, requireSize } from "../core/validation.js";
+import { exportImage } from "./exportImage.js";
 import { getContext, loadImage } from "./loadImage.js";
 
-export const cropImage = async (source: string, area: Area, rotation = 0): Promise<string> => {
+export const cropImage = async (
+  source: string,
+  area: Area,
+  { rotation = 0, ...output }: CropImageOptions = {},
+): Promise<string> => {
   requireSize(area);
   for (const value of [area.x, area.y, rotation]) requireFinite(value);
   const width = Math.round(area.width);
@@ -22,5 +27,5 @@ export const cropImage = async (source: string, area: Area, rotation = 0): Promi
   context.translate(offset.x, offset.y);
   context.rotate(getRadianAngle(rotation));
   context.drawImage(image, -image.naturalWidth / 2, -image.naturalHeight / 2);
-  return canvas.toDataURL("image/jpeg");
+  return exportImage(canvas, output);
 };

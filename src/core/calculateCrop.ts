@@ -9,13 +9,14 @@ export const calculateCrop = ({
   position = { x: 0, y: 0 },
   zoom = 1,
   rotation = 0,
-  orientation = "landscape",
+  aspect = 16 / 9,
 }: CropOptions): CropResult => {
   requireSize(imageSize);
   requireSize(viewportSize);
   for (const value of [position.x, position.y, zoom, rotation]) requireFinite(value);
+  requireFinite(aspect);
+  if (aspect <= 0) throw new RangeError("Aspect ratio must be positive");
   const nextRotation = clamp(rotation, -180, 180);
-  const aspect = orientation === "landscape" ? 16 / 9 : 9 / 16;
   const mediaSize = getMediaSize(imageSize, viewportSize);
   const cropSize = getCropSize(mediaSize, viewportSize, aspect, nextRotation);
   const minimumZoom = getMinimumZoom(mediaSize, cropSize, nextRotation);
@@ -26,7 +27,7 @@ export const calculateCrop = ({
     position: nextPosition,
     zoom: nextZoom,
     rotation: nextRotation,
-    orientation,
+    aspect,
     minimumZoom,
     maximumZoom,
     mediaSize,
