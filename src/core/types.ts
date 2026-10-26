@@ -39,6 +39,7 @@ export interface ImageOutputOptions {
 }
 
 export interface CropImageOptions extends ImageOutputOptions {
+  readonly outputSize?: Size;
   readonly rotation?: number;
 }
 
