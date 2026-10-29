@@ -1,6 +1,6 @@
 # image-cropper-plus
 
-[hasujimakuのクロッパー](https://github.com/AkaakuHub/hasujimaku/tree/33ed8319b1c2f37c4245a6bacfeea9dc4fb45217/src/components/crop)から、画像処理と座標計算を抽出したTypeScriptライブラリです。React・Vue・Svelte・通常のJavaScriptで共通して使えます。
+画像の切り抜き・回転・拡大縮小と座標計算を行うTypeScriptライブラリです。React・Vue・Svelte・通常のJavaScriptで共通して使えます。
 
 ## インストール
 

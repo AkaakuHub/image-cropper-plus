@@ -2,7 +2,7 @@
   "name": "image-cropper-plus",
   "version": "0.1.1",
   "license": "MIT",
-  "description": "Framework-independent image cropping core extracted from hasujimaku",
+  "description": "Framework-independent TypeScript image cropping, rotation, resizing, and coordinate calculations",
   "type": "module",
   "sideEffects": false,
   "files": [

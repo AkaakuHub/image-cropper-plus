@@ -1,7 +1,3 @@
-Cropping, rotation, position restriction, HEIC conversion and image resizing
-were extracted from AkaakuHub/hasujimaku:
-https://github.com/AkaakuHub/hasujimaku/tree/33ed8319b1c2f37c4245a6bacfeea9dc4fb45217/src/components/crop
-
 Crop sizing and pixel area calculations are adapted from react-easy-crop 6.2.2.
 https://github.com/ValentinH/react-easy-crop
 
